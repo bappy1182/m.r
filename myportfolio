@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmudur Rahman - Professional Portfolio</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--light);
+        }
+        
+        .contact-bar {
+            background-color: var(--secondary);
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .contact-bar a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+        
+        h3 {
+            color: var(--dark);
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid var(--secondary);
+            margin-left: 10px;
+        }
+        
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--secondary);
+        }
+        
+        .date {
+            background: var(--secondary);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+        
+        ul li::before {
+            content: "•";
+            color: var(--secondary);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-card {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .cert-card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+        }
+        
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .hobby {
+            background: var(--light);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+            
+            section {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mahmudur Rahman</h1>
+            <div class="tagline">Commercial, Supply Chain, Logistics & Warehouse Professional</div>
+        </div>
+        <div class="contact-bar">
+            <a href="mailto:example@email.com">✉️ example@email.com</a>
+            <a href="tel:+1234567890">📞 +123 456 7890</a>
+            <a href="#">📍 Dhaka, Bangladesh</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="career-objective">
+            <h2>Career Objective</h2>
+            <p>I am eager to express my interest in the role of Commercial, Supply Chain, Procurement, Customs Bond, Logistics, C&F, and Banking Specialist at your esteemed organization. I bring an extensive background in IT and systems management, having honed my skills through professional experiences in the RMG industry, spinning mills, textile and woven fabrics sectors, as well as the IT industry. This diverse expertise has equipped me to manage complex processes and drive operational excellence across multiple domains.</p>
+            <p>With a robust background in commercial, logistic & supply chain operations enhanced by hands-on certifications in Supply Chain, Leadership, Cybersecurity, data analytics, and IT systems, I offer a unique blend of strategic leadership and technical expertise.</p>
+            <p>Over the past 18 years, I have honed my skills through roles that demand meticulous attention to security, data integrity, and operational efficiency.</p>
+        </section>
+        
+        <section id="accomplishments">
+            <h2>Accomplishments</h2>
+            <ul>
+                <li><strong>Service Loyalty Award & Certification</strong> For Successfully Completed 15 Years of Service From Epyllion Group.</li>
+            </ul>
+        </section>
+        
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">July 2018 - Present</div>
+                    <h3>Assistant Manager – Commercial & Supply Chain Management</h3>
+                    <p>Epyllion Group, Dhaka, Bangladesh</p>
+                    <ul>
+                        <li>Managed multifaceted operations covering import/export, banking, and documentation</li>
+                        <li>Textile import LC open via ERP</li>
+                        <li>Integrated IT systems and Cybersecurity measures to secure sensitive commercial data</li>
+                        <li>Ensured compliance with national and international standards</li>
+                        <li>Oversaw contract management and cross-departmental initiatives</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">July 2015 - July 2018</div>
+                    <h3>Senior Executive – Commercial & Supply Chain Management</h3>
+                    <p>Epyllion Group, Dhaka, Bangladesh</p>
+                    <ul>
+                        <li>Managed import/export documentation and banking</li>
+                        <li>Integrated IT systems and Cybersecurity measures</li>
+                        <li>Ensured compliance with standards</li>
+                        <li>Oversaw risk-reducing initiatives</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">January 2011 - July 2015</div>
+                    <h3>Executive – Commercial & Supply Chain Management</h3>
+                    <p>Epyllion Group, Dhaka, Bangladesh</p>
+                    <ul>
+                        <li>All Packaging and Accessories import & export follow-up</li>
+                        <li>Packaging and Accessories export documentation</li>
+                        <li>Customs Bond operations</li>
+                        <li>Overall in-house Export & Local documentation</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">July 2007 - July 2011</div>
+                    <h3>Assistant Executive – Commercial & IT</h3>
+                    <p>Epyllion Group, Dhaka, Bangladesh</p>
+                    <ul>
+                        <li>Packaging and Accessories import & export follow-up</li>
+                        <li>Export documentation</li>
+                        <li>Customs Bond operations</li>
+                        <li>IT hardware, network system service & support</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">February 2005 - July 2007</div>
+                    <h3>Group Leader – Administration & Data Analysis</h3>
+                    <p>Sobar Jonno, Dhaka, Bangladesh</p>
+                    <ul>
+                        <li>Supervised Project management & IT team</li>
+                        <li>Implemented data management protocols</li>
+                        <li>Coordinated administrative operations</li>
+                        <li>Developed & implemented PMIS for Bangladesh Air Force</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2014</div>
+                    <h3>MBA in Management Information Systems</h3>
+                    <p>Ahsanullah University of Science and Technology, Dhaka</p>
+                    <p>CGPA: 2.7/4.0</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">2009</div>
+                    <h3>BSc in Computer Science & Engineering</h3>
+                    <p>The Peoples University of Bangladesh, Dhaka</p>
+                    <p>CGPA: 2.72/4.0</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">2006</div>
+                    <h3>Diploma in Computer Science & Engineering</h3>
+                    <p>Ideal Institute of Science & Technology, Dhaka</p>
+                    <p>CGPA: 3.47/4.0</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="date">1998</div>
+                    <h3>Secondary School Certificate – Science</h3>
+                    <p>Municipal Model High School, Chittagong</p>
+                    <p>First Division (60%)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>Introduction to Cybersecurity</h3>
+                    <p>CISCO Networking Academy (Apr 2025)</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>Basics of Python</h3>
+                    <p>Cambridge International Qualification & UNIATHENA (Jan 2025)</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>Google Analytics</h3>
+                    <p>COURSERA (Jun 2022)</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>Content & Creative Design</h3>
+                    <p>LinkedIn Marketing Lab (Jul 2024)</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>Marketing Fundamentals</h3>
+                    <p>LinkedIn Marketing Lab (Mar 2024)</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>Marketing Strategy</h3>
+                    <p>LinkedIn Marketing (Jul 2024)</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>Computer Science Fundamentals</h3>
+                    <p>Bangladesh Atomic Energy Commission (Feb 2006)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills and Competencies</h2>
+            <div class="skills-container">
+                <div class="skill-card">Cybersecurity & Data Protection</div>
+                <div class="skill-card">Commercial Operations & Regulatory Compliance</div>
+                <div class="skill-card">Computer Engineering fundamentals</div>
+                <div class="skill-card">Team management</div>
+                <div class="skill-card">Data Analytics & IT Solutions</div>
+                <div class="skill-card">Leadership & Project Management</div>
+                <div class="skill-card">Proactive problem solver</div>
+                <div class="skill-card">Cross-functional collaboration</div>
+                <div class="skill-card">Graphics Design</div>
+                <div class="skill-card">Project Management</div>
+                <div class="skill-card">AI tools & Prompts</div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects and Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Leadership Development Training</h3>
+                    <p>Epyllion Group, Bangladesh (2015)</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Training on Fire Fighting, Fire Rescue & First Aid</h3>
+                    <p>Bangladesh Fire Service & Civil Service Directorate (2016)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="internship">
+            <h2>Internship</h2>
+            <div class="timeline-item">
+                <div class="date">Nov 2005 - Feb 2006</div>
+                <h3>Computer Science Teacher</h3>
+                <p>Bangladesh Atomic Energy Commission, Savar, Dhaka</p>
+                <ul>
+                    <li>Programming languages (C, C++, SQL, JAVA)</li>
+                    <li>Computer Networking (Server Setup, LAN & WAN)</li>
+                    <li>Hardware & Software installation</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="extracurricular">
+            <h2>Extracurricular Activities</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Guinness World Record Holder</h3>
+                    <p>BDCyclists, Dhaka (Dec 2017)</p>
+                    <p>Certification of Participation – The Longest Single Line of Moving Bicycles</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Finisher - Run for Awareness</h3>
+                    <p>World Diabetes Day by Sailor (Dec 2020)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="languages">
+            <h2>Languages</h2>
+            <div class="skills-container">
+                <div class="skill-card">Bengali (Native)</div>
+                <div class="skill-card">English (Proficiency)</div>
+            </div>
+        </section>
+        
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <div class="hobbies">
+                <div class="hobby">Badminton</div>
+                <div class="hobby">Cricket</div>
+                <div class="hobby">Football</div>
+                <div class="hobby">Chess</div>
+                <div class="hobby">Carom</div>
+                <div class="hobby">Billiard</div>
+                <div class="hobby">Computer Games</div>
+                <div class="hobby">Reading Books</div>
+                <div class="hobby">Gardening</div>
+                <div class="hobby">Drawing</div>
+            </div>
+        </section>
+        
+        <section id="references">
+            <h2>References</h2>
+            <div class="timeline-item">
+                <h3>Mahmuda Akter</h3>
+                <p>PhD fellow at Monash University Malaysia</p>
+                <p>📞 +600897946</p>
+                <p>✉️ Mahmuda.Akter@monash.edu</p>
+                <p>Jalan Lagoon Selatan, Bandar Sunway, 47500 Subang Jaya, Selangor</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2025 Mahmudur Rahman - Professional Portfolio</p>
+    </footer>
+</body>
+</html>
